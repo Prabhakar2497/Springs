@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	<bean class="com.Employee" name="e1">
+		<constructor-arg>
+			<list>
+				<value>Tom</value>
+				<value>Jerry</value>
+				<value>Dinga</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg>
+			<set>
+				<value>100</value>
+				<value>200</value>
+				<value>300</value>
+			</set>
+		</constructor-arg>
+		<constructor-arg value="TCS" />
+	</bean>
+</beans>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<bean class="com.RCB" name="rcb1">
+<property name="name">
+<value>Virat Kohli</value>
+</property>
+<property name="matches">
+<value>167</value>
+</property>
+</bean>
+<bean class="com.RCB" name="rcb2">
+<property name="name">
+<value>Gayle</value>
+</property>
+<property name="matches">
+<value>154</value>
+</property>
+</bean>
+</beans>

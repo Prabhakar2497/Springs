@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<bean class="com.Laptop" name="l">
+ <constructor-arg name="brand" value="Lenovo"/>
+ <constructor-arg name="cost" value="100000"></constructor-arg>
+</bean>
+<bean class="com.Student" name="s">
+<constructor-arg name="stuId" value="100"/>
+<constructor-arg name="laptop" ref="l"/>
+</bean>
+</beans>

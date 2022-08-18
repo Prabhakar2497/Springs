@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<bean class="com.CricBuzz" name="player1">
+<property name="name">
+<value>Virat Kohli</value>
+</property>
+<property name="coach">
+<list>
+<value>Rahul Dravid</value>
+</list>
+</property>
+<property name="team">
+<set>
+<value>India</value>
+</set>
+</property>
+<property name="details">
+<map>
+<entry key="Border Gavaskar" value="58.98"></entry>
+</map>
+</property>
+</bean>
+<bean class="com.CricBuzz" name="player2">
+<property name="name" value="Babar Azam"/>
+<property name="coach">
+<list>
+<value>Mathew Hayden</value>
+</list>
+</property>
+<property name="team">
+<set>
+<value>Pakistan</value>
+</set>
+</property>
+<property name="details">
+<map>
+<entry key="Asia Cup" value="53.78"></entry>
+</map>
+</property>
+</bean>
+</beans>
